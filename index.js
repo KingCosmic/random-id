@@ -1,13 +1,16 @@
 
-const possibilities = {
+var possibilities = {
   lowerCased: 'abcdefghijklmnopqrstuvwxyz',
   capitals: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
   numbers: '0123456789',
   special: '~!@#$%^&()_+-={}[];\','
 };
 
-const randomId = (len = 30, pattern = 'aA0') => {
-  let chars;
+function randomId(len, pattern) {
+  if (!len) len = 30;
+  if (!pattern) pattern = 'aA0';
+
+  var chars;
 
   pattern.split('').forEach((a) => {
     if (!isNaN(parseInt(a))) {
@@ -21,9 +24,9 @@ const randomId = (len = 30, pattern = 'aA0') => {
     }
   });
 
-  let result = '';
+  var result = '';
 
-  for (let i = 0; i < len; i++) {
+  for (var i = 0; i < len; i++) {
     result += chars.charAt(Math.floor(Math.random() * chars.length)); 
   }
 
