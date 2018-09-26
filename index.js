@@ -10,17 +10,17 @@ function randomId(len, pattern) {
   if (!len) len = 30;
   if (!pattern) pattern = 'aA0';
 
-  var chars;
+  var chars = '';
 
   pattern.split('').forEach((a) => {
     if (!isNaN(parseInt(a))) {
-      chars = possibilities.numbers;
+      chars += possibilities.numbers;
     } else if (/[a-z]/.test(a)) {
-      chars = possibilities.lowerCased;
+      chars += possibilities.lowerCased;
     } else if (/[A-Z]/.test(a)) {
-      chars = possibilities.capitals;
+      chars += possibilities.capitals;
     } else {
-      chars = possibilities.special;
+      chars += possibilities.special;
     }
   });
 
