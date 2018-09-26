@@ -1,6 +1,6 @@
 {
   "name": "random-id",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a random id generator",
   "main": "index.js",
   "repository": "https://github.com/KingCosmic/random-id.git",
