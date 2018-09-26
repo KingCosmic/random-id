@@ -5,8 +5,5 @@
   "main": "index.js",
   "repository": "https://github.com/KingCosmic/random-id.git",
   "author": "Austyn Studdard <KingCosmic2016@gmail.com>",
-  "license": "MIT",
-  "engines": {
-    "node": ">= 1.0.0"
-  }
+  "license": "MIT"
 }
