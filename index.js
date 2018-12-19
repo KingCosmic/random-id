@@ -24,8 +24,13 @@ function randomId(len, pattern) {
     }
   });
 
-  return [...new Array(len).keys()]
-    .map(x => chars.charAt(Math.floor(Math.random() * chars.length))).join('')
+  var result = '';
+
+  for (var i = 0; i < len; i++) {
+    result += chars.charAt(Math.floor(Math.random() * chars.length)); 
+  }
+
+  return result;
 }
 
 if (module && require) {
