@@ -33,8 +33,4 @@ function randomId(len, pattern) {
   return result;
 }
 
-if (module && require) {
-  module.exports = randomId;
-} else {
-  window.randomId = randomId;
-}
+module.exports = randomId;
